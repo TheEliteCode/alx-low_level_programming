@@ -1,6 +1,6 @@
 /*
  * File: 6-size.c
- * Auth: Brennan D Baraban
+ * A complete program that prints various types
  */
 
 #include <stdio.h>
