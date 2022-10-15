@@ -1,6 +1,6 @@
 /*
  * File: 0-positive_or_negative.c
- * Auth: Positive is better than negative
+ * Auth: Brennan D Baraban
  */
 
 #include <stdlib.h>
@@ -22,10 +22,10 @@ int main(void)
 
 	if (n > 0)
 		printf("%d is positive\n", n);
-	else if (n = 0)
-		printf("%d is zero\n", n);
-	else 
+	else if (n < 0)
 		printf("%d is negative\n", n);
+	else
+		printf("%d is zero\n", n);
 
 	return (0);
 }
