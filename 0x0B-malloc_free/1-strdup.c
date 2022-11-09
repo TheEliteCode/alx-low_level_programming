@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdlib.h>
 
 /**
  * _strdup - create a new array containing a copy of the given string
@@ -9,22 +10,25 @@
  */
 char *_strdup(char *str)
 {
-	char *dup;
-	unsigned int size = 0;
+	char *duplicate;
+	unsigned int i, len;
 
-	if (str)
-	{
-		while (str[size++])
-			;
+	i = 0;
+	len = 0;
 
-		dup = malloc(sizeof(char) * size);
-		if (dup)
-		{
-			while (size--)
-				dup[size] = str[size];
+	if (str == NULL)
+		return (NULL);
 
-			return (dup);
-		}
-	}
-	return (NULL);
+	while (str[len])
+		len++;
+	duplicate = malloc(sizeof(char) * (len + 1));
+
+	if (duplicate == NULL)
+		return (NULL);
+
+	while ((duplicate[i] = str[i]) != '\0')
+		i++;
+
+	return (duplicate);
 }
+
