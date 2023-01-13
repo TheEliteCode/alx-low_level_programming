@@ -1,10 +1,6 @@
 # C - Doubly linked lists
 
-In this project, I learned abou using doubly-linked lists in C.
-
-## Tests :heavy_check_mark:
-
-* [tests](./tests): Folder of test files. Provided by Holberton School.
+In this project, I learned about using doubly-linked lists in C.
 
 ## Header File :file_folder:
 
