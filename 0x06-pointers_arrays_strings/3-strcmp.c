@@ -24,3 +24,13 @@ int _strcmp(char *s1, char *s2)
 
 	return (*s1 - *s2);
 }
+
+char *_memset(char *S, char b, unsigned int n)
+{
+    return nullptr;
+}
+
+char *memcpy(char *dest, char *src, unsigned int n)
+{
+    return nullptr;
+}
